@@ -7,10 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043CCAA0235622EE0074A395 /* InstagramStoriesSharer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043CCA9E235622EE0074A395 /* InstagramStoriesSharer.swift */; };
+		043CCAA1235622EE0074A395 /* InstagramStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043CCA9F235622EE0074A395 /* InstagramStory.swift */; };
+		043CCAA4235EA1070074A395 /* ISSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043CCAA3235EA1070074A395 /* ISSError.swift */; };
+		043CCAA6235EA1C50074A395 /* BackgroundType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043CCAA5235EA1C50074A395 /* BackgroundType.swift */; };
+		043CCAAA235EAA380074A395 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043CCAA9235EAA380074A395 /* UIColor+.swift */; };
 		0452BD1423561D42002A9295 /* InstagramStoriesShare.h in Headers */ = {isa = PBXBuildFile; fileRef = 0452BD0623561D42002A9295 /* InstagramStoriesShare.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		043CCA9E235622EE0074A395 /* InstagramStoriesSharer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramStoriesSharer.swift; sourceTree = "<group>"; };
+		043CCA9F235622EE0074A395 /* InstagramStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramStory.swift; sourceTree = "<group>"; };
+		043CCAA3235EA1070074A395 /* ISSError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSError.swift; sourceTree = "<group>"; };
+		043CCAA5235EA1C50074A395 /* BackgroundType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundType.swift; sourceTree = "<group>"; };
+		043CCAA9235EAA380074A395 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		0452BD0323561D42002A9295 /* InstagramStoriesShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InstagramStoriesShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0452BD0623561D42002A9295 /* InstagramStoriesShare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstagramStoriesShare.h; sourceTree = "<group>"; };
 		0452BD0723561D42002A9295 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -27,9 +37,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		043CCA9D235622E40074A395 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				043CCAA3235EA1070074A395 /* ISSError.swift */,
+				043CCA9F235622EE0074A395 /* InstagramStory.swift */,
+				043CCAA5235EA1C50074A395 /* BackgroundType.swift */,
+				043CCA9E235622EE0074A395 /* InstagramStoriesSharer.swift */,
+				043CCAA9235EAA380074A395 /* UIColor+.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		0452BCF923561D41002A9295 = {
 			isa = PBXGroup;
 			children = (
+				043CCA9D235622E40074A395 /* Sources */,
 				0452BD0523561D42002A9295 /* InstagramStoriesShare */,
 				0452BD0423561D42002A9295 /* Products */,
 			);
@@ -96,6 +119,7 @@
 				TargetAttributes = {
 					0452BD0223561D41002A9295 = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 				};
 			};
@@ -132,6 +156,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043CCAA1235622EE0074A395 /* InstagramStory.swift in Sources */,
+				043CCAA4235EA1070074A395 /* ISSError.swift in Sources */,
+				043CCAA6235EA1C50074A395 /* BackgroundType.swift in Sources */,
+				043CCAA0235622EE0074A395 /* InstagramStoriesSharer.swift in Sources */,
+				043CCAAA235EAA380074A395 /* UIColor+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,7 +218,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -246,7 +275,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -261,7 +290,9 @@
 		0452BD1823561D42002A9295 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -273,9 +304,12 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = TomosukeOkada.InstagramStoriesShare;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,7 +318,9 @@
 		0452BD1923561D42002A9295 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -296,9 +332,11 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = TomosukeOkada.InstagramStoriesShare;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
